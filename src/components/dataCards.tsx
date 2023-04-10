@@ -1,4 +1,5 @@
-import React from 'react'
+
+import Button from './button';
 
 interface CardProps {
     length?: string;
@@ -10,11 +11,12 @@ interface CardProps {
 
 const DataCards: React.FC<CardProps> = ({ length, time, type, p1, p2 }) => {
     return (
-        <div className='w-[90%] h-full relative flex justify-center place-items-center group overflow-hidden'>
-            <div className='w-full h-full bg-white rounded-md group-hover:blur-none scrollbar-hide' >
+        <div className='w-[90%] h-full relative flex justify-center place-items-center group overflow-visible cursor-pointer'>
+
+            <div className='w-full h-full bg-white rounded-md group-hover:blur-lg group-hover:opacity-75' >
                 <div className='w-full h-full bg-white rounded-md bg-gradient-to-br from-purple-400 via-blue-300 to-yellow-300 group-hover:scale-[150%] group-hover:animate-spin-slow scrollbar-hide'/>
             </div>
-            {/* 
+            
             <div className='absolute w-[99%] h-[99%]'>
                 <div className='bg-black w-full h-full flex flex-col justify-center gap-6 py-6 rounded-md px-6 group-hover:scale-95 z-50'>
                     <h1 className='text-white font-extrabold overflow-y-hidden flex justify-center text-3xl'>{length}</h1>
@@ -28,7 +30,7 @@ const DataCards: React.FC<CardProps> = ({ length, time, type, p1, p2 }) => {
                     </div>
                 </div>
             </div>
-             */}
+            
 
         </div>
     )
