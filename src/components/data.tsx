@@ -3,7 +3,7 @@ import DataCards from './dataCards'
 
 export default function Data() {
   return (
-    <div className='mt-4 flex flex-col gap-8'>
+    <div className='mt-4 flex flex-col gap-8 overflow-visible'>
         {/* upper text section */}
         <div className='flex flex-col gap-4'>
             <div className='flex place-items-center gap-2'>
@@ -14,7 +14,7 @@ export default function Data() {
                 <h1 className='text-slate-400 font-medium text-sm'>{`"Урамшууллыг зөвхөн 1 удаа ашиглах боломжтой"`}</h1>
             </div>
         </div>
-        <div className='grid grid-cols-4 flex-col gap-8 py-4 px-2'>
+        <div className='grid grid-cols-4 flex-col gap-8 py-4 px-2 h-80 overflow-visible'>
             <DataCards  length = "30 хоног" time = "ХЯЗГААРГҮЙ" type = "Хурд, хэмжээ хязгааргүй" p1 = "25'000" p2 = "12'500"/>
             <DataCards  length = "90 хоног" time = "ХЯЗГААРГҮЙ" type = "Хурд, хэмжээ хязгааргүй" p1 = "50'000" p2 = "25'000"/>
             <DataCards  length = "50GB" time = "ХУГАЦААГҮЙ" type = "Шилжүүлэх боломжтой" p1 = "25'000" p2 = "12'500"/>

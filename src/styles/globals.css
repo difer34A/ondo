@@ -11,7 +11,13 @@ body{
     font-family: "Montserrat";
     overflow-x: hidden;
 }
-.hello:hover {
-    box-shadow: 0 0 15px 0px#B94AF5 blur(100px);
-    background: linear-gradient(to bottom right, #B94AF5, #81EA8C, #e4b311);
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
