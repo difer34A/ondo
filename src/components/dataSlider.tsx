@@ -18,15 +18,14 @@ export default function DataSlider() {
     <div className='w-full h-80 bg-white flex flex-col place-items-center px-20 p-12 justify-around rounded-xl'>
         <div className='w-full relative flex justify-center gap-20 overflow-visible my-6'>
             <h1 className='font-extrabold text-2xl'>/</h1>
-            {value !== "1" &&
-            <h2 ref={el => elements.current[1] = el} className='font-extrabold text-3xl absolute -translate-x-28 -top-10 text-slate-700 blur-sm duration-100'>{`${Number(value)-1}'000₮`}</h2>}
+            <h2 ref={el => elements.current[1] = el} className={`${value === '1' ? "hidden" : "visible"} font-extrabold text-3xl absolute -translate-x-28 -top-10 text-slate-700 blur-sm duration-100`}>{`${Number(value)-1}'000₮`}</h2>
             
             <h2 ref={el => elements.current[0] = el} className='font-extrabold text-3xl absolute -translate-x-28 duration-100'>{`${value}'000₮`}</h2>
 
-            {value !== "100" &&
-            <h2 ref={el => elements.current[2] = el} className='font-extrabold text-3xl absolute -translate-x-28 top-10 text-slate-700 blur-sm duration-100'>{`${Number(value)+1}'000₮`}</h2>}
+            
+            <h2 ref={el => elements.current[2] = el} className={` ${value !== '100' ? "visible" : "hidden"} font-extrabold text-3xl absolute -translate-x-28 top-10 text-slate-700 blur-sm duration-100`}>{`${Number(value)+1}'000₮`}</h2>
 
-            <h2 ref={el => elements.current[3] = el} className='font-extrabold text-3xl text-slate-600 absolute translate-x-24 duration-100'>{`${Number(value) * 1.5}GB`}</h2>
+            <h2 ref={el => elements.current[3] = el} className={`font-extrabold text-3xl text-slate-600 absolute translate-x-24 duration-100`}>{`${Number(value) * 1.5}GB`}</h2>
         </div>
 
         <div className='w-full mt-8 overflow-visible'>

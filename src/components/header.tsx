@@ -10,7 +10,7 @@ export default function Header() {
                 <Link href={"/"}>
                     <img src="https://ondo.mn/images/Logo.svg?imwidth=128" alt="ondo" />
                 </Link>
-                <div className='flex gap-4'>
+                <div className='flex gap-4 invisible lg:visible'>
                     <Link href={"#"} className='text-white font-bold text-sm'>ЯАГААД ONDO ГЭЖ?</Link>
                     <Link href={"#"} className='text-white font-bold text-sm'>ДАТА ЦЭНЭГЛЭХ</Link>
                     <Link href={"#"} className='text-white font-bold text-sm'>ДУГААР АВАХ</Link>

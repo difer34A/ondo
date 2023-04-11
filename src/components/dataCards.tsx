@@ -23,7 +23,7 @@ const DataCards: React.FC<CardProps> = ({ length, time, type, p1, p2 }) => {
                     <h1 className='text-white font-medium overflow-y-hidden flex justify-center text-xl'>{time}</h1>
                     <h1 className='text-slate-300 font-normal overflow-y-hidden flex justify-center text-sm'>{type}</h1>
                     <div className='w-full bg-slate-700 h-[0.4px] opacity-50' />
-                    <div className='w-full flex gap-4  place-items-center justify-center'>
+                    <div className='w-full flex gap-4  place-items-center justify-center overflow-visible'>
                         <h1 className='text-slate-300 font-medium overflow-y-hidden flex justify-center text-2xl line-through'>{p1}₮</h1>
 
                         <h1 className='text-white font-semibold overflow-y-hidden flex justify-center text-2xl'>{p2}₮</h1>

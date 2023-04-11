@@ -9,7 +9,7 @@ export default function Main({ children }) {
                 <title>ONDO proto</title>
                 <link rel="icon" type="image/x-icon" href="/icon.webp" />
             </Head>
-            <div className='w-screen px-[50px] lg:px-[250px] xl:px-[350px] flex flex-col gap-10'>
+            <div className='w-screen px-[25px] xl:px-[100px] 2xl:px-[250px] flex flex-col gap-10'>
                 {children}
             </div>
         </>
